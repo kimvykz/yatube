@@ -1,0 +1,20 @@
+
+
+
+
+
+
+python -m venv venv
+source venv/Scripts/activate
+deactivate
+pip install Django==2.2
+django-admin startproject yatube
+python manage.py runserver
+
+python manage.py startapp posts
+
+
+
+
+Запуск сайта
+Файл manage.py — это оболочка для управления модулями Django. В дальнейшем мы будем через него добавлять новых администраторов (python manage.py createsuperuser), запускать проект (python manage.py runserver), создавать новые приложения (python manage.py startapp). Полный список доступных команд можно увидеть, запустив в терминале команду вызова справки: python manage.py --help.
